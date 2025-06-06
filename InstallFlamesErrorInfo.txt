@@ -1,14 +1,4 @@
-GGCGTAGCTCCTconda create -n FlamesR r-base r-essentials -y
-conda create -n FLAMESR r-base r-essentials -y
-
-conda create -n FLAMES r-base=4.4.3 r-essentials -c conda-forge
-docker run -e PASSWORD=123456 -p 9803:8787 ghcr.io/changqingw/igniternaseq:latest
-
-docker run -d -e PASSWORD=bgiliyy -p 8787:8787 -v /home/liyy/1.data/FLAMES_Space:/data ghcr.io/changqingw/igniternaseq:latest
-
-/home/rstudio
-
-docker run -d -e PASSWORD=bgiliyy -p 8787:8787 -v /home/liyy/1.data/FLAMES_Space:/home/rstudio ghcr.io/changqingw/igniternaseq:latestn> BiocManager::install("FLAMES")
+> BiocManager::install("FLAMES")
 Bioconductor version 3.20 (BiocManager 1.30.25), R 4.4.3 (2025-02-28)                                                                                                                                                                      
 Installing package(s) 'FLAMES'                                                                                                                                                                                                             
 also installing the dependencies ‘rhdf5filters’, ‘Cairo’, ‘HDF5Array’, ‘rhdf5’, ‘Rhdf5lib’, ‘magick’, ‘ggrastr’, ‘bluster’, ‘DropletUtils’, ‘igraph’, ‘SpatialExperiment’, ‘scater’, ‘scran’
@@ -441,4 +431,4 @@ The downloaded source packages are in
         ‘/tmp/Rtmpa4nNDT/downloaded_packages’
 Old packages: 'BiocManager', 'curl', 'pheatmap', 'RCurl', 'xml2', 'caret',
   'glmnet', 'gower', 'haven', 'httpuv', 'MASS', 'promises'
-Update all/some/none? [a/s/n]: 
+Update all/some/none? [a/s/n]:
